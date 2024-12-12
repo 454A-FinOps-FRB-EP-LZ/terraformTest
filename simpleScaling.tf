@@ -268,7 +268,7 @@ resource "aws_launch_template" "web_lc" {
 
     # set up to run APIs
     sudo yum install -y git python3 pip
-    sudo pip3 install flask gunicorn
+    sudo pip3 install flask gunicorn psutil
 
     # start and enable the SSM Agent
     sudo systemctl start amazon-ssm-agent
